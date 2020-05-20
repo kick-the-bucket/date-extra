@@ -1,0 +1,43 @@
+{
+    "name": "kick-the-bucket/date-extra",
+    "type": "library",
+    "description": "A Twig filter for rendering the difference between dates",
+    "keywords": ["twig", "date", "time", "diff"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com",
+            "homepage": "http://fabien.potencier.org",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "Kick_the_BUCKET",
+            "email": "kick-the-bucket@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3|^8.0",
+        "twig/twig": "^2.4|^3.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.2|^5.0",
+        "symfony/translation": "^3.4|^4.2|^5.0"
+    },
+    "suggest": {
+        "symfony/translation": "Allow the time_diff output to be translated"
+    },
+    "autoload": {
+        "psr-4": { "Twig\\Extra\\Date\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Twig\\Extra\\Date\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
